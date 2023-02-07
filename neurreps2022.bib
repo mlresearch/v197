@@ -1,0 +1,166 @@
+@Proceedings{neurreps2022,
+    booktitle = {Proceedings of the 1st NeurIPS Workshop on Symmetry and Geometry in Neural Representations},
+    name = {NeurIPS Workshop on Symmetry and Geometry in Neural Representations},
+    shortname = {NeurReps},
+    editor = {Sanborn, Sophia and Shewmake, Christian and Azeglio, Simone and Di Bernardo, Arianna, and Miolane, Nina},
+    volume = {197},
+    year = {2022},
+    start = {2022-12-03},
+    end = {2022-12-03},
+    published = {2023-02-07},
+    conference_url = {https://neurreps.org},
+    address = {New Orleans, Lousiana, USA}
+}
+
+@InProceedings{sanborn2022,
+    title = {Preface},
+    author = {Sanborn, Sophia and Shewmake, Christian and Azeglio, Simone and Di Bernardo, Arianna, and Miolane, Nina},
+    pages = {i-vi},
+}
+
+@InProceedings{shutty2022,
+    title = {Computing representations for Lie algebraic networks},
+    author = {Shutty, Noah and Wierzynski, Casimir},
+    pages = {1-21},
+    abstract = {Recent work has constructed neural networks that are equivariant to continuous symmetry groups such as 2D and 3D rotations. This is accomplished using explicit {\it Lie group representations} to derive the equivariant kernels and nonlinearities. We present three contributions motivated by frontier applications of equivariance beyond rotations and translations. First, we relax the requirement for explicit Lie group representations with a novel algorithm that finds representations of arbitrary Lie groups given only the {\it structure constants} of the associated Lie algebra. Second, we provide a self-contained method and software for building Lie group-equivariant neural networks using these representations. Third, we contribute a novel benchmark dataset for classifying objects from relativistic point clouds, and apply our methods to construct the first object-tracking model equivariant to the Poincar\'e group.}
+}
+
+@InProceedings{chau2022,
+    title = {Disentangling images with Lie group transformations and sparse coding},
+    author = {Chau, Ho Yin and Qiu, Frank and Chen, Yubei and Olshausen, Bruno},
+    pages = {22-47},
+    abstract = {Discrete spatial patterns and their continuous transformations are two important regularities in natural signals. Lie groups and representation theory are mathematical tools used in previous works to model continuous image transformations. On the other hand, sparse coding is an essential tool for learning dictionaries of discrete natural signal patterns. This paper combines these ideas in a Bayesian generative model that learns to disentangle spatial patterns and their continuous transformations in a completely unsupervised manner. Images are modeled as a sparse superposition of shape components followed by a transformation parameterized by $n$ continuous variables. The shape components and transformations are not predefined but are instead adapted to learn the data's symmetries. The constraint is that the transformations form a representation of an $n$-dimensional torus. Training the model on a dataset consisting of controlled geometric transformations of specific MNIST digits shows that it can recover these transformations along with the digits. Training on the full MNIST dataset shows that it can learn the basic digit shapes and the natural transformations such as shearing and stretching contained in this data. This work provides the simplest known Bayesian mathematical model for building unsupervised factorized representations. The  source code is publicly available under MIT License.}
+}
+
+@InProceedings{vanderouderaa2022,
+    title = {Sparse Convolutions on Lie Groups},
+    author = {van der Ouderaa, Tycho F.A. and van der Wilk, Mark},
+    pages = {48-62},
+    abstract = {Convolutional neural networks have proven very successful for a wide range of modelling tasks. Convolutional layers embed equivariance to discrete translations into the architectural structure of neural networks. Extensions have generalised continuous Lie groups beyond translation, such as rotation, scale or more complex symmetries. Other works have allowed for relaxed equivariance constraints to better model data that does not fully respect symmetries while still leveraging on useful inductive biases that equivariances provide. How continuous convolutional filters on Lie groups can best be parameterised remains an open question. To parameterise sufficiently flexible continuous filters, small MLP hypernetworks are often used in practice. Although this works, it typically introduces many additional model parameters. To be more parameter-efficient, we propose an alternative approach and define continuous filters with a small finite set of basis functions through anchor points. Regular convolutional layers appear as a special case, allowing for practical conversion between regular filters and our basis function filter formulation, at equal memory complexity. The basis function filters enable efficient construction of neural network architectures with equivariance or relaxed equivariance, outperforming baselines on vision classification tasks.}
+}
+
+@InProceedings{klee2022,
+    title = {Image to Icosahedral Projection for SO(3) Object Reasoning from Single-View Images},
+    author = {Klee, David and Biza, Ondrej and Platt, Robert and Walters, Robin},
+    pages = {64-80},
+    abstract = {Reasoning about 3D objects based on 2D images is challenging due to variations in appearance caused by viewing the object from different orientations. Tasks such as object classification are invariant to 3D rotations and other such as pose estimation are equivariant. However, imposing equivariance as a model constraint is typically not possible with 2D image input because we do not have an a priori model of how the image changes under out-of-plane object rotations. The only SO(3)-equivariant models that currently exist require point cloud or voxel input rather than 2D images. In this paper, we propose a novel architecture based on icosahedral group convolutions that reasons in SO(3) by learning a projection of the input image onto an icosahedron. The resulting model is approximately equivariant to rotation in SO(3). We apply this model to object pose estimation and shape classification tasks and find that it outperforms reasonable baselines.}
+}
+
+@InProceedings{sangalli2022,
+    title = {Moving frame net: SE(3)-equivariant network for volumes},
+    author = {Sangalli, Mateus and Blusseau, Samy and Velasco-Forero, Santiago and Angulo, Jes\'{u}s},
+    pages = {81-97},
+    abstract = {Equivariance of neural networks to transformations helps to improve their performance and reduce generalization error in computer vision tasks, as they apply to datasets presenting symmetries (e.g. scalings, rotations, translations). The method of moving frames is classical for deriving operators invariant to the action of a Lie group in a manifold.Recently, a rotation and translation equivariant neural network for image data was proposed based on the moving frames approach. In this paper we significantly improve that approach by reducing the computation of moving frames to only one, at the input stage, instead of repeated computations at each layer. The equivariance of the resulting architecture is proved theoretically and we build a rotation and translation equivariant neural network to process volumes, i.e. signals on the 3D space. Our trained model overperforms the benchmarks in the medical volume classification of most of the tested datasets from MedMNIST3D.}
+}
+
+@InProceedings{robin2022,
+    title = {Periodic signal recovery with regularized sine neural networks},
+    author = {Robin, David A. R. and Scaman, Kevin and Lelarge, Marc},
+    pages = {98-110},
+    abstract = {We consider the problem of learning a periodic one-dimensional signal with neural networks, and designing models that are able to extrapolate the signal well beyond the training window. First, we show that multi-layer perceptrons with ReLU activations are provably unable to perform this task, and lead to poor performance in practice even close to the training window. Then, we propose a novel architecture using sine activation functions along with a well-chosen non-convex regularization, that is able to extrapolate the signal with low error well beyond the training window. Our architecture is several orders of magnitude better than its competitors for distant extrapolation (beyond 100 periods of the signal), while being able to accurately recover the frequency spectrum of the signal in a multi-tone setting.}
+}
+
+@InProceedings{thakur2022,
+    title = {Does Geometric Structure in Convolutional Filter Space Provide Filter Redundancy Information?},
+    author = {Thakur, Anshul and Abrol, Vinayak and Sharma, Pulkit},
+    pages = {111-121},
+    abstract = {This paper aims to study the geometrical structure present in a CNN filter space for investigating redundancy or importance of an individual filter. In particular, this paper analyses the convolutional layer filter space using simplical geometry to establish a relation between filter relevance and their location on the simplex. Convex combination of extremal points of a simplex can span the entire volume of the simplex. As a result, these points are inherently the most relevant components. Based on this principle, we hypothesise a notion that filters lying near these extremal points of a simplex modelling the filter space are least redundant filters and vice-versa. We validate this positional relevance hypothesis by successfully employing it for data-independent filter ranking and artificial filter fabrication in trained convolutional neural networks. The empirical analysis on different CNN architectures such as ResNet-50 and VGG-16 provide strong evidence in favour of the postulated positional relevance hypothesis. }
+}
+
+@InProceedings{mcguire2022,
+    title = {Do neural networks trained with topological features learn different internal representations?},
+    author = {McGuire, Sarah and Jackson, Shane and Emerson, Tegan and Kvinge, Henry},
+    pages = {122-136},
+    abstract = {There is a growing body of work that leverages features extracted via topological data analysis to train machine learning models. While this field, sometimes known as topological machine learning (TML), has seen some notable successes, an understanding of how the process of learning from topological features differs from the process of learning from raw data is still limited. In this work, we begin to address one component of this larger issue by asking whether a model trained with topological features learns internal representations of data that are fundamentally different than those learned by a model trained with the original raw data. To quantify ``different'', we exploit two popular metrics that can be used to measure the similarity of the hidden representations of data within neural networks, neural stitching and centered kernel alignment. From these we draw a range of conclusions about how training with topological features does and does not change the representations that a model learns. Perhaps unsurprisingly, we find that structurally, the hidden representations of models trained and evaluated on topological features differ substantially compared to those trained and evaluated on the corresponding raw data. On the other hand, our experiments show that in some cases, these representations can be reconciled (at least to the degree required to solve the corresponding task) using a simple affine transformation. We conjecture that this means that neural networks trained on raw data may extract some limited topological features in the process of making predictions.}
+}
+
+@InProceedings{davies2022,
+    title = {Fuzzy c-means clustering in persistence diagram space for deep learning model selection},
+    author = {Davies, Thomas and Aspinall, Jack and Wilder, Bryan and Tran-Thanh Long},
+    pages = {137-157},
+    abstract = {Persistence diagrams concisely capture the structure of data, an ability that is increasingly being used in the nascent field of topological machine learning. We extend the ubiquitous Fuzzy c-Means (FCM) clustering algorithm to the space of persistence diagrams, enabling unsupervised learning in a topological setting. We give theoretical convergence guarantees that correspond to the Euclidean case and empirically demonstrate the capability of the clustering to capture topological information via the fuzzy RAND index. We present an application of our algorithm to a scenario that utilises both the topological and fuzzy nature of our algorithm: pre-trained model selection in deep learning. As pre-trained models can perform well on multiple tasks, selecting the best model is a naturally fuzzy problem; we show that fuzzy clustering persistence diagrams allows for unsupervised model selection using just the topology of their decision boundaries.}
+}
+
+@InProceedings{donmez2022,
+    title = {On the ambiguity in classification},
+    author = {D\"{o}nmez, Arif},
+    pages = {158-170},
+    abstract = {We develop a theoretical framework for geometric deep learning that incorporates ambiguous data in learning tasks. This framework uncovers deep connections between noncommutative geometry and learning tasks. Namely, it turns out that learning tasks naturally arise from groupoids, and vice versa. We also find that learning tasks are closely linked to the geometry of its groupoid $*$-algebras. This point of view allows us to answer the question of what actually constitutes a classification problem and link unsupervised learning tasks to random walks on the second groupoid cohomology of its groupoid.}
+}
+
+@InProceedings{akhtiamov2022,
+    title = {Connectedness of loss landscapes via the lens of Morse theory},
+    author = {Akhtiamov, Danil and Thomson, Matt},
+    pages = {171-181},
+    abstract = {Mode connectivity is a recently discovered property of neural networks stating that two weight configurations of small loss can usually be connected by a path of small loss. The mode connectivity property is interesting practically as it has applications to design of optimizers with better generalization properties and various other applied topics as well as theoretically as it suggests that loss landscapes of deep networks have very nice properties even though they are known to be highly non-convex. The goal of this work is to study connectedness of loss landscapes via the lens of Morse theory. A brief introduction to Morse theory is provided.}
+}
+
+@InProceedings{aslan2022,
+    title = {Group invariant machine learning by fundamental domain projections},
+    author = {Aslan, Benjamin and Platt, Daniel and Sheard, David},
+    pages = {181-218},
+    abstract = {We approach the well-studied problem of supervised group invariant and equivariant machine learning from the point of view of geometric topology. We propose a novel approach using a pre-processing step, which involves projecting the input data into a geometric space which parametrises the orbits of the symmetry group. This new data can then be the input for an arbitrary machine learning model (neural network, random forest, support-vector machine etc). We give an algorithm to compute the geometric projection, which is efficient to implement, and we illustrate our approach on some example machine learning problems (including the well-studied problem of predicting Hodge numbers of CICY matrices), finding an improvement in accuracy versus others in the literature.}
+}
+
+@InProceedings{tian2022,
+    title = {Mixed-membership community detection via line graph curvature},
+    author = {Tian, Yu and Lubberts, Zachary and Weber, Melanie},
+    pages = {219-233},
+    abstract = {Community detection is a classical method for understanding the structure of relational data. In this paper, we study the problem of identifying mixed-membership community structure. We argue that it is beneficial to perform this task on the line graph, which can be constructed from an input graph by encoding the relationship between its edges. Here, we propose a curvature-based algorithm for mixed-membership community detection on the line graph. Our algorithm implements a discrete Ricci curvature flow under which the edge weights of a graph evolve to reveal its community structure. We demonstrate the performance of our approach in a series of benchmark experiments.}
+}
+
+@InProceedings{jude2022,
+    title = {Capturing cross-session neural population variability through self-supervised identification of consistent neuron ensembles},
+    author = {Jude, Justin and Perich, Matthew G and Miller, Lee E and Hennig, Matthias H},
+    pages = {234-257},
+    abstract = {Decoding stimuli or behaviour from recorded neural activity is a common approach to interrogate brain function in research, and an essential part of brain-computer and brain-machine interfaces. Reliable decoding even from small neural populations is possible because high dimensional neural population activity typically occupies low dimensional manifolds that are discoverable with suitable latent variable models. Over time however, drifts in activity of individual neurons and instabilities in neural recording devices can be substantial, making stable decoding over days and weeks impractical. While this drift cannot be predicted on an individual neuron level, population level variations over consecutive recording sessions such as differing sets of neurons and varying permutations of consistent neurons in recorded data may be learnable when the underlying manifold is stable over time. Classification of consistent versus unfamiliar neurons across sessions and accounting for deviations in the order of consistent recording neurons across sessions of recordings may then maintain decoding performance and uncover a task-related neural manifold. Here we show that self-supervised training of a deep neural network can be used to compensate for this inter-session variability. As a result, a sequential autoencoding model can maintain state-of-the-art behaviour decoding performance for completely unseen recording sessions several days into the future. Our approach only requires a single recording session for training the model, and is a step towards reliable, recalibration-free brain computer interfaces.}
+}
+
+@InProceedings{vastola2022,
+    title = {Is the information geometry of probabilistic population codes learnable?},
+    author = {Vastola, John J. and Cohen, Zach and Drugowitsch, Jan},
+    pages = {258-277},
+    abstract = {One reason learning the geometry of latent neural manifolds from neural activity data is difficult is that the ground truth is generally not known, which can make manifold learning methods hard to evaluate. Probabilistic population codes (PPCs), a class of biologically plausible and self-consistent models of neural populations that encode parametric probability distributions, may offer a theoretical setting where it is possible to rigorously study manifold learning. It is natural to define the neural manifold of a PPC as the statistical manifold of the encoded distribution, and we derive a mathematical result that the information geometry of the statistical manifold is directly related to measurable covariance matrices. This suggests a simple but rigorously justified decoding strategy based on principal component analysis, which we illustrate using an analytically tractable PPC.}
+}
+
+@InProceedings{wang2022,
+    title = {On the level sets and invariance of neural tuning landscapes},
+    author = {Wang, Binxu and Ponce, Carlos R.},
+    pages = {278-300},
+    abstract = {Visual representations can be defined as the activations of neuronal populations in response to images. The activation of a neuron as a function over all image space has been described as a "tuning landscape". As a function over a high-dimensional space, what is the structure of this landscape? In this study, we characterize tuning landscapes through the lens of level sets and Morse theory. A recent study measured the in vivo two-dimensional tuning maps of neurons in different brain regions. Here, we developed a statistically reliable signature for these maps based on the change of topology in level sets. We found this topological signature changed progressively throughout the cortical hierarchy, with similar trends found for units in convolutional neural networks (CNNs). Further, we analyzed the geometry of level sets on the tuning landscapes of CNN units. We advanced the hypothesis that higher-order units can be locally regarded as isotropic radial basis functions, but not globally. This shows the power of level sets as a conceptual tool to understand neuronal activations over image space. }
+}
+
+@InProceedings{baroni-bashiri2022,
+    title = {Learning invariance manifolds of visual sensory neurons},
+    author = {Baroni, Luca and Bashiri, Mohammad and Willeke, Konstantin F. and  Antol\'ik, J\'an and Sinz, Fabian H.},
+    pages = {301-326},
+    abstract = {Robust object recognition is thought to rely on neural mechanisms that are selective to complex stimulus features while being invariant to others (e.g., spatial location or orientation). To better understand biological vision, it is thus crucial to characterize which features neurons in different visual areas are selective or invariant to. In the past, invariances have commonly been identified by presenting carefully selected hypothesis-driven stimuli which rely on the intuition of the researcher. One example is the discovery of phase invariance in V1 complex cells. However, to identify novel invariances, a data-driven approach is more desirable. Here, we present a method that, combined with a predictive model of neural responses, learns a manifold in the stimulus space along which a target neuron’s response is invariant. Our approach is fully data-driven, allowing the discovery of novel neural invariances, and enables scientists to generate and experiment with novel stimuli along the invariance manifold. We test our method on Gabor-based neuron models as well as on a neural network fitted on macaque V1 responses and show that 1) it successfully identifies neural invariances, and 2) disentangles invariant directions in the stimulus space.}
+}
+
+@InProceedings{iyer2022,
+    title = {Geometry of inter-areal interactions in mouse visual cortex},
+    author = {Iyer, Ramakrishnan and Siegle, Joshua and Mahalingam, Gayathri and Olsen, Shawn and Mihalas, Stefan},
+    pages = {327-353},
+    abstract = {The response of a set of neurons in an area is the result of the sensory input, the interaction of the neurons within the area as well as the long range interactions between areas. We aimed to study the relation between interactions among multiple areas, and if they are fixed or dynamic. The structural connectivity provides a substrate for these interactions, but anatomical connectivity is not known in sufficient detail and it only gives us a static picture. Using the Allen Brain Observatory Visual Coding Neuropixels dataset, which includes simultaneous recordings of spiking activity from up to 6 hierarchically organized mouse cortical visual areas, we estimate the functional connectivity between neurons using a linear model of responses to flashed static grating stimuli. We characterize functional connectivity between populations via interaction subspaces. We find that distinct subspaces of a source area mediate interactions with distinct target areas, supporting the notion that cortical areas use distinct channels to communicate. Most importantly, using a piecewise linear model for activity within each trial, we find that these interactions evolve dynamically over tens of milliseconds following a stimulus presentation. Inter-areal subspaces become more aligned with the intra-areal subspaces during epochs in which a feedforward wave of activity propagates through visual cortical areas. When the short-term dynamics are averaged over, we find that the interaction subspaces are stable over multiple stimulus blocks. These findings have important implications for understanding how information flows through biological neural networks composed of interconnected modules, each of which may have a distinct functional specialization.}
+}
+
+@InProceedings{klindt2022,
+    title = {Topological ensemble detection with differentiable yoking},
+    author = {Klindt, David and Gaukstad, Sigurd and Vaupel, Melvin and Hermansen, Erik and Dunn, Benjamin},
+    pages = {354-369},
+    abstract = {Modern neural recordings comprise thousands of neurons recorded at millisecond precision. An important step in analyzing these recordings is to identify <em>neural ensembles</em> --- subsets of neurons that represent a subsystem of specific functionality A famous example in the mammalian brain is that of the grid cells, which separate into ensembles of different spatial resolution. Recent work demonstrated that recordings from individual ensembles exhibit the topological signature of a torus. This is obscured, however, in combined recordings from multiple ensembles. Inspired by this observation, we introduce a topological ensemble detection algorithm that is capable of unsupervised identification of neural ensembles based on their topological signatures. This identification is achieved by optimizing a loss function that captures the assumed topological signature of the ensemble and opens up exciting possibilities, e.g., searching for cell ensembles in prefrontal cortex, which may represent cognitive maps on more conceptual spaces than grid cells.}
+}
+
+@InProceedings{xu-gao2022,
+    title = {Conformal Isometry of Lie Group Representation in Recurrent Network of Grid Cells},
+    author = {Xu, Dehong and Gao, Ruiqi and Zhang, Wen-Hao and Wei, Xue-Xin and Wu, Ying Nian},
+    pages = {370-387},
+    abstract = {The activity of the grid cell population in the medial entorhinal cortex (MEC) of the mammalian brain forms a vector representation of the self-position of the animal. Recurrent neural networks have been proposed to explain the properties of the grid cells by updating the neural activity vector based on the velocity input of the animal. In doing so, the grid cell system effectively performs path integration. In this paper, we investigate the algebraic, geometric, and topological properties of grid cells using recurrent network models. Algebraically, we study the Lie group and Lie algebra of the recurrent transformation as a representation of self-motion. Geometrically, we study the conformal isometry of the Lie group representation where the local displacement of the activity vector in the neural space is proportional to the local displacement of the agent in the 2D physical space. Topologically, the compact and connected abelian Lie group representation automatically leads to the torus topology commonly assumed and observed in neuroscience. We then focus on a simple non-linear recurrent model that underlies the continuous attractor neural networks of grid cells. Our numerical experiments show that conformal isometry leads to hexagon periodic patterns in the grid cell responses and our model is capable of accurate path integration. Code is available at \url{https://github.com/DehongXu/grid-cell-rnn}.}
+}
+
+@InProceedings{duan-khona-bertagnoli2022,
+    title = {See and Copy: Generation of complex compositional movements from modular and geometric RNN representations},
+    author = {Duan, Sunny and Khona, Mikail and Bertagnoli, Adrian and Chandra, Sarthak and Fiete, Ila R.},
+    pages = {388-400},
+    abstract = {A hallmark of biological intelligence and control is combinatorial generalization: animals are able to learn various things, then piece them together in new combinations to produce appropriate outputs for new tasks. Inspired by the ability of primates to readily imitate seen movement sequences, we present a model of motor control using a realistic model of arm dynamics, tasked with imitating a guide that makes arbitrary two-segment drawings. We hypothesize that modular organization is one of the keys to such flexible and generalizable control. We construct a modular control model consisting of separate encoding and motor RNNs and a scheduler, which we train end-to-end on the task. We show that the modular structure allows the model to generalize not only to unseen two-segment trajectories, but to new drawings consisting of many more segments than it was trained on, and also allows for rapid adaptation to perturbations. Finally, our model recapitulates experimental observations of the preparatory and execution-related processes unfolding during motor control, providing a normative explanation for functional segregation of preparatory and execution-related activity within the motor cortex.}
+}

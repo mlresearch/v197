@@ -1,0 +1,88 @@
+---
+booktitle: Proceedings of the 1st NeurIPS Workshop on Symmetry and Geometry in Neural
+  Representations
+shortname: NeurReps
+volume: '197'
+year: '2022'
+start: 2022-12-03
+end: 2022-12-03
+published: 2023-02-07
+layout: proceedings
+series: Proceedings of Machine Learning Research
+publisher: PMLR
+issn: 2640-3498
+id: neurreps2022
+month: 0
+cycles: false
+bibtex_editor: Sanborn, Sophia and Shewmake, Christian and Azeglio, Simone and Di
+  Bernardo, Arianna and Miolane, Nina
+editor:
+- given: Sophia
+  family: Sanborn
+- given: Christian
+  family: Shewmake
+- given: Simone
+  family: Azeglio
+- given: Arianna
+  family: Di Bernardo
+- given: Nina
+  family: Miolane
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of the 1st NeurIPS Workshop on Symmetry and Geometry in Neural Representations
+    Held in New Orleans, Lousiana, USA on 03 December 2022
+
+  Published as Volume 197 by the Proceedings of Machine Learning Research on 07 February 2023.
+
+  Volume Edited by:
+    Sophia Sanborn
+    Christian Shewmake
+    Simone Azeglio
+    Arianna Di Bernardo
+    Nina Miolane
+
+  Series Editors:
+    Neil D. Lawrence
+date_str: 03 Dec
+url: https://proceedings.mlr.press
+author:
+  name: PMLR
+baseurl: "/v197"
+twitter_username: MLResearchPress
+github_username: mlresearch
+markdown: kramdown
+exclude:
+- README.md
+- Gemfile
+- ".gitignore"
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
+style: pmlr
+permalink: "/:title.html"
+ghub:
+  edit: true
+  repository: v197
+display:
+  copy_button:
+    bibtex: true
+    endnote: true
+    apa: true
+  comments: false
+volume_type: Volume
+volume_dir: v197
+email: ''
+conference:
+  name: NeurIPS Workshop on Symmetry and Geometry in Neural Representations
+  url: https://neurreps.org
+  location: New Orleans, Lousiana, USA
+  dates:
+  - 2022-12-03
+analytics:
+  google:
+    tracking_id: UA-92432422-1
+orig_bibfile: "/Users/neil/mlresearch/v197/neurreps2022.bib"
+# Site settings
+# Original source:  /Users/neil/mlresearch/v197/neurreps2022.bib
